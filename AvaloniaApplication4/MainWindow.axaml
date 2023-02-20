@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplication4.MainWindow"
+        Title="mdaaaaaaaaaa">
+        
+        
+                <Grid>
+                        <TabControl x:Name="allTab">
+                        <TabItem x:Name="ProductTabItem" Header="Продукты">
+                                <DataGrid x:Name="ProductGrid" AutoGenerateColumns="False">
+                                        <DataGrid.Columns>
+                                                <DataGridTextColumn Header="Марка" Binding="{Binding Path=car_id}" />
+                                                <DataGridTextColumn Header="Модель" Binding="{Binding Path=carModel}" />
+                                                <DataGridTextColumn Header="Цвет" Binding="{Binding Path=Color}" />
+                                                <DataGridTextColumn Header="Количество" Binding="{Binding Path=Count}"/>
+                                                <DataGridTextColumn Header="Стоимость" Binding="{Binding Path=Price}" />
+                                        </DataGrid.Columns>
+                                </DataGrid>
+                                
+                        </TabItem>
+                        
+                        <TabItem x:Name="ClientTabItem" Header="Клиенты">
+                                 <ComboBox x:Name="tst"/>
+                        </TabItem>
+                </TabControl>
+        </Grid>
+</Window>
